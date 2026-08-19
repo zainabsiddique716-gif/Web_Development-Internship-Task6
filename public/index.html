@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A small focus board for shipping meaningful work.">
+  <title>Shipshape Focus Board</title>
+  <link rel="stylesheet" href="styles.css">
+  <script type="module" src="app.js"></script>
+</head>
+<body>
+  <main class="shell">
+    <header class="masthead">
+      <div>
+        <p class="eyebrow">Monday / 19 August 2026</p>
+        <h1>Make room for<br><em>one good thing.</em></h1>
+      </div>
+      <div class="status-mark" aria-label="Staging build healthy"><span></span> staging / healthy</div>
+    </header>
+    <section class="intro" aria-labelledby="board-title">
+      <div><p class="eyebrow">Your working set</p><h2 id="board-title">Focus board</h2></div>
+      <p class="hint">Select a task to move it forward.</p>
+    </section>
+    <section class="progress-line" aria-label="Focus progress">
+      <div class="progress-label"><strong id="progress-count">0 / 0</strong><span>completed</span></div>
+      <div class="progress-track"><div id="progress-bar"></div></div>
+      <span id="remaining-count">0 remaining</span>
+    </section>
+    <section id="task-list" class="task-list" aria-live="polite"></section>
+    <footer><span>SHIPSHAPE / FOCUS-01</span><span>Small steps, visible progress.</span></footer>
+  </main>
+</body>
+</html>
