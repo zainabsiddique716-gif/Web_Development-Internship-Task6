@@ -1,4 +1,4 @@
-import { nextStatus, summarize } from '../src/focus.js';
+import { nextStatus, summarize } from './src/focus.js';
 
 const tasks = [
   { title: 'Review the launch checklist', detail: 'Product / 25 min', status: 'done' },
