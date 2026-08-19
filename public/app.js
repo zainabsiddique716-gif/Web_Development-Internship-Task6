@@ -7,6 +7,12 @@ const tasks = [
   { title: 'Clear the small paper cut', detail: 'Maintenance / 15 min', status: 'planned' }
 ];
 const list = document.querySelector('#task-list');
+const initialStatuses = tasks.map((task) => task.status);
+
+document.querySelector('#reset-board').addEventListener('click', () => {
+  tasks.forEach((task, index) => { task.status = initialStatuses[index]; });
+  render();
+});
 
 function render() {
   const summary = summarize(tasks);
