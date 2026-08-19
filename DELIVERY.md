@@ -34,7 +34,7 @@ Capture these after pushing to GitHub and enable Pages:
 
 The screenshot files are intentionally not fabricated locally: they must show the real repository, run ID, commit SHA, and GitHub merge protection state.
 
-## Part C: reflection (303 words)
+## Part C: reflection (321 words)
 
 GitHub Flow makes `main` the only branch that can feed staging, while feature branches provide a quiet place to make and review one change at a time. That boundary matters because the staging workflow is intentionally automatic: once a pull request is merged, the code is eligible to appear in the shared environment. Review therefore becomes the first risk filter, and CI becomes the second. A reviewer can reason about intent, edge cases, accessibility, and maintainability; the pipeline can then repeat the mechanical checks on the exact commit that is proposed for merge.
 
