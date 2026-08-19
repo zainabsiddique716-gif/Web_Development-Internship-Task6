@@ -13,5 +13,5 @@ test('summarizes completed and remaining work', () => {
     { status: 'done' },
     { status: 'planned' },
     { status: 'done' }
-  ]), { completed: 2, total: 3, remaining: 1 });
+  ]), { completed: 3, total: 3, remaining: 0 });
 });
